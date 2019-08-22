@@ -27,7 +27,7 @@ $data = json_decode(file_get_contents($url));
         <div class="col">Water Temperature</div>
 <?php
         }
-        }
+        
 ?>
       </div>
       <div class="row">
