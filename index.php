@@ -19,13 +19,13 @@ $data = json_decode(file_get_contents($url));
     <div class="container">
       <div class="row">
         <div class="col">Air Temperature</div>
-<?php
+//<?php
 //        if(property_exists($data, "temp_extra_1")) {
-?>
+//?>
         <div class="col">Water Temperature</div>
-<?php
+//<?php
 //        }
-?>
+//?>
       </div>
       <div class="row">
         <div class="col"><?php echo($data->temp_f); ?> &deg; F</div>
