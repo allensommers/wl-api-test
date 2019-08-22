@@ -2,7 +2,8 @@
 
 $url = getenv("URL")."/v1/NoaaExt.json?user=".getenv("DID")."&pass=".getenv("PASSWORD")."&apiToken=".getenv("APITOKEN");
 
-$data = json_decode(file_get_contents($url));
+$data = json_decode(file_get_contents($url),true);
+
 ?>
 <html>
   <head>
@@ -21,7 +22,7 @@ $data = json_decode(file_get_contents($url));
         <div class="col">Air Temperature</div>
 <?php
        // if(property_exists($data, "davis_current_observation")) {
-         if (isset($data->temp_extra_1)) {
+         if ($arr[davis_current_observation][temp_extra_1]) {
 
 ?>
         <div class="col">Water Temperature</div>
