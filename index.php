@@ -37,7 +37,7 @@ $extratemp = $data->davis_current_observation->temp_extra_1;
        // if(property_exists($data, "temp_extra_1")) {
         if ($extratemp) {
 ?>
-        <div class="col"><?php echo($extratemp); ?> &deg; F</div>
+        <div class="col"><?php echo($data->davis_current_observation->temp_extra_1); ?> &deg; F</div>
 <?php
         }
 ?>
