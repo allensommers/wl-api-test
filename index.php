@@ -20,7 +20,7 @@ $data = json_decode(file_get_contents($url));
       <div class="row">
         <div class="col">Air Temperature</div>
 <?php
-        if(property_exists($data, "davis_current_observation->temp_extra_1")) {
+        if(property_exists($data, "davis_current_observation"->"temp_extra_1")) {
 ?>
         <div class="col">Water Temperature</div>
 <?php
@@ -28,7 +28,7 @@ $data = json_decode(file_get_contents($url));
 ?>
       </div>
       <div class="row">
-        <div class="col"><?php echo($data->temp_extra_1); ?> &deg; F</div>
+        <div class="col"><?php echo($data->temp_f); ?> &deg; F</div>
 <?php
         if(property_exists($data, "temp_extra_1")) {
 ?>
