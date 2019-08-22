@@ -12,7 +12,7 @@ $extratemp = $data->davis_current_observation->temp_extra_1;
     <style>
       * {
         font-family: 'Lexend Deca', sans-serif;
-        font-size: 36px;
+        font-size: 24px;
       }
     </style>
   </head>
@@ -35,11 +35,11 @@ $extratemp = $data->davis_current_observation->temp_extra_1;
         <div class="col"><?php echo($data->temp_f); ?> &deg; F</div>
 <?php
        // if(property_exists($data, "temp_extra_1")) {
-        if ($extratemp) {
+//        if ($extratemp) {
 ?>
         <div class="col"><?php echo($data->davis_current_observation->temp_extra_1); ?> &deg; F</div>
 <?php
-        }
+//        }
 ?>
       </div>
     </div>
