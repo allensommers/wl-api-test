@@ -3,8 +3,7 @@
 $url = getenv("URL")."/v1/NoaaExt.json?user=".getenv("DID")."&pass=".getenv("PASSWORD")."&apiToken=".getenv("APITOKEN");
 
 $data = json_decode(file_get_contents($url));
-$arr = json_decode(file_get_contents($url,true));
-
+$extratemp = $data->davis_current_observation->temp_extra_1;
 ?>
 <html>
   <head>
@@ -13,7 +12,7 @@ $arr = json_decode(file_get_contents($url,true));
     <style>
       * {
         font-family: 'Lexend Deca', sans-serif;
-        font-size: 64px;
+        font-size: 36px;
       }
     </style>
   </head>
@@ -23,7 +22,7 @@ $arr = json_decode(file_get_contents($url,true));
         <div class="col">Air Temperature</div>
 <?php
        // if(property_exists($data, "davis_current_observation")) {
-         if ($arr[davis_current_observation][temp_extra_1]) {
+         if ($extratemp) {
 
 ?>
         <div class="col">Water Temperature</div>
