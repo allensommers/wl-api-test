@@ -22,12 +22,12 @@ $extratemp = $data->davis_current_observation->temp_extra_1;
         <div class="col">Air Temperature</div>
 <?php
        // if(property_exists($data, "davis_current_observation")) {
-         if ($extratemp) {
+//         if ($extratemp) {
 
 ?>
         <div class="col">Water Temperature</div>
 <?php
-        }
+//        }
         
 ?>
       </div>
