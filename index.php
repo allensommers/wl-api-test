@@ -35,7 +35,7 @@ $data = json_decode(file_get_contents($url));
         <div class="col"><?php echo($data->temp_extra_1); ?> &deg; F</div>
 //<?php
 //        }
-//?>
+?>
       </div>
     </div>
   </body>
