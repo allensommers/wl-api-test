@@ -22,7 +22,7 @@ $data = json_decode(file_get_contents($url));
 #<?php
 #        if(property_exists($data, "temp_extra_1")) {
 #?>
-#        <div class="col">Water Temperature</div>
+        <div class="col">Water Temperature</div>
 #<?php
 #        }
 #?>
