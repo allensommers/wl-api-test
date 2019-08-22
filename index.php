@@ -2,7 +2,8 @@
 
 $url = getenv("URL")."/v1/NoaaExt.json?user=".getenv("DID")."&pass=".getenv("PASSWORD")."&apiToken=".getenv("APITOKEN");
 
-$data = json_decode(file_get_contents($url),true);
+$data = json_decode(file_get_contents($url));
+$arr = json_decode(file_get_contents($url,true));
 
 ?>
 <html>
