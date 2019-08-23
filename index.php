@@ -19,7 +19,7 @@ if (property_exists($data, "davis_current_observation")) {
     <style>
       * {
         font-family: 'Lexend Deca', sans-serif;
-        font-size: 64px;
+        font-size: 24px;
       }
     </style>
   </head>
