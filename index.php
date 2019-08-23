@@ -30,7 +30,7 @@ if (property_exists($data, "davis_current_observation")) {
       </div>
       <div class="row">
         <div class="col">Air Temp</div>
-        <div class="col">Extra Temp 1</div>
+        <div class="col">Water Temp</div>
       </div>
       <div class="row">
         <div class="col"><?php echo($temp); ?> &deg; F</div>
